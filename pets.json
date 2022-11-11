@@ -1,5 +1,4 @@
-{
-  "Ant":
+[
   {
     "name": "Ant",
     "tier": 1,
@@ -10,7 +9,6 @@
     "t3_power": "Give one random friend +6 attack and +3 health",
     "keyword": "Faint"
   },
-  "Pig":
   {
     "name": "Pig",
     "tier": 1,
@@ -21,7 +19,6 @@
     "t3_power": "Gain +3 gold",
     "keyword": "Sell"
   },
-  "Fish":
   {
     "name": "Fish",
     "tier": 1,
@@ -35,4 +32,4 @@
 
 
 
-}
+]
