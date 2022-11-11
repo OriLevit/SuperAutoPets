@@ -1,4 +1,5 @@
 class Pet:
+    #TODO Add fruit on pet
     def __init__(self, name, tier, attack, health, t1_power, t2_power, t3_power, power_keyword):
         self.name = name
         self.tier = tier
