@@ -4,6 +4,7 @@ class Game:
         self.turn = turn
         self.gold = gold
         self.current_tier = current_tier
+        self.wins = 0
 
     # region GET methods
     def get_hearts(self):
@@ -18,6 +19,8 @@ class Game:
     def get_current_tier(self):
         return self.current_tier
 
+    def get_wins(self):
+        return self.wins
     # endregion
 
     # region SET methods
@@ -33,6 +36,8 @@ class Game:
     def set_current_tier(self, tier):
         self.current_tier = tier
 
+    def set_wins(self, amount):
+        self.wins = amount
     # endregion
 
     # region change values
@@ -50,4 +55,7 @@ class Game:
 
     def advance_tier(self):
         self.current_tier += 1
+
+    def add_win(self):
+        self.wins += 1
     # endregion
