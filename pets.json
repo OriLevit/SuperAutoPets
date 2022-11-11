@@ -1,0 +1,38 @@
+{
+  "Ant":
+  {
+    "name": "Ant",
+    "tier": 1,
+    "attack": 2,
+    "health": 1,
+    "t1_power": "Give one random friend +2 attack and +1 health",
+    "t2_power": "Give one random friend +4 attack and +2 health",
+    "t3_power": "Give one random friend +6 attack and +3 health",
+    "keyword": "Faint"
+  },
+  "Pig":
+  {
+    "name": "Pig",
+    "tier": 1,
+    "attack": 4,
+    "health": 1,
+    "t1_power": "Gain +1 gold",
+    "t2_power": "Gain +2 gold",
+    "t3_power": "Gain +3 gold",
+    "keyword": "Sell"
+  },
+  "Fish":
+  {
+    "name": "Fish",
+    "tier": 1,
+    "attack": 2,
+    "health": 2,
+    "t1_power": "Give all friends +1 attack and +1 health",
+    "t2_power": "Give all friends +1 attack and +1 health",
+    "t3_power": "None",
+    "keyword": "Level-up"
+  }
+
+
+
+}
