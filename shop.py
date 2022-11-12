@@ -1,4 +1,6 @@
 import random
+import reader
+
 
 
 class Shop:
@@ -13,6 +15,9 @@ class Shop:
 
     def get_pets_in_shop(self):
         return self.pets_in_shop
+
+    def get_pets_in_shop_names(self):
+        return reader.get_pet_list_names(self.pets_in_shop)
 
     def get_shop_max_tier(self):
         return self.get_shop_max_tier()

@@ -1,3 +1,5 @@
+import random
+
 import printer
 import reader
 from game import Game
@@ -10,7 +12,7 @@ for game in range(games_to_play):
 
     # Declaring starting values
     current_game = Game(hearts=10, turn=1, gold=10, current_tier=1)
-    player_board = Board(0, [])
+    player_board = Board([])
 
     # getting all available pets in current tier or below
     available_pets = reader.get_available_pets(current_game.get_current_tier())
@@ -21,5 +23,10 @@ for game in range(games_to_play):
 
     # print starting message
     printer.print_new_game(current_game)
+
+    print(shop.get_pets_in_shop_names())
+    pos_pet_to_buy = random.randint(1,shop.get_amount_of_pets_in_shop())
+    pet_to_buy = shop.get_pets_in_shop()[pos_pet_to_buy]
+    print(f"{pet_to_buy['name']} -- pos: {pos_pet_to_buy}")
 
 
