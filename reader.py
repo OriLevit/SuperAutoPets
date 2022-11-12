@@ -11,7 +11,7 @@ def get_available_pets(tier):
     all_pets = get_pet_list()
     available_pets = []
     for pet in all_pets:
-        if pet["tier"] == tier:
+        if pet["tier"] <= tier:
             available_pets.append(pet)
 
     return available_pets
