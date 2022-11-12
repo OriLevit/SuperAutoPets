@@ -1,5 +1,4 @@
 class Pet:
-    #TODO Add fruit on pet
     def __init__(self, name, tier, attack, health, t1_power, t2_power, t3_power, power_keyword):
         self.name = name
         self.tier = tier
@@ -9,6 +8,7 @@ class Pet:
         self.t2_power = t2_power
         self.t3_power = t3_power
         self.power_keyword = power_keyword
+        self.fruit_on_pet = ""
 
     # region GET Methods
     def get_name(self):
@@ -34,6 +34,9 @@ class Pet:
 
     def get_keyword(self):
         return self.power_keyword
+
+    def get_fruit_on_pet(self):
+        return self.fruit_on_pet
 
     # endregion
 
@@ -61,6 +64,9 @@ class Pet:
 
     def set_keyword(self, keyword):
         self.power_keyword = keyword
+
+    def set_fruit_on_pet(self, fruit):
+        self.fruit_on_pet = fruit
     # endregion
 
 
