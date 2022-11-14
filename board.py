@@ -19,12 +19,10 @@ class Board:
 
     # endregion
 
-    def buy_pet(self, pet: Pet, position: int, game: Game,price=3):
-        if game.get_gold() >2 and len(self.pets) >= position and self.pets[position] is not None:
+    def add_pet(self, pet:Pet, position:int):
+        if len(self.pets) >= position and self.pets[position] is not None:
             self.pets[position] = pet
-            game.reduce_gold(price)
 
-    def sell_pet(self, position: int, game: Game, price=1):
+    def remove_pet(self, position: int):
         if len(self.pets) >= position and self.pets[position] is not None:
             self.pets[position] = None
-            game.add_gold(price)
